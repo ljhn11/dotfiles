@@ -139,6 +139,7 @@ bindsym $mod+Shift+0 move container to workspace 10
  assign [class="(?i)vlc"] → 5
  assign [class="(?i)mplayer"] → 5
  assign [class="(?i)smplayer"] → 5
+ assign [class="(?i)feh"] → 5
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
