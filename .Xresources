@@ -1,8 +1,8 @@
 ! font set
-URxvt.font: xft:Inconsolata:size=12
-urxvt*boldFont: xft:Inconsolata:bold:size=12
+urxvt.font: xft:Inconsolata:bold:size=12
+urxvt*internalBorder: 0
 ! Input Method set
-URxvt.inputMethod:fcitx
+Rxvt.inputMethod:fcitx
 
 ! window geometry set
 ! URxvt.geometry: 80x30

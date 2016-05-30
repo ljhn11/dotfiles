@@ -206,8 +206,9 @@ bar {
 exec --no-startup-id feh --bg-scale ~/.i3/background.png
 exec --no-startup-id volumeicon
 exec --no-startup-id fcitx
-exec --no-startup-id urxvt
-exec --no-startup-id urxvt
+#exec --no-startup-id urxvt
+#exec --no-startup-id urxvt -e bash -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -n$USER -s$USER@$HOSTNAME"
+exec --no-startup-id urxvt -e bash -c "tmux -q has-session && exec tmux attach || exec tmux new-session"
 exec --no-startup-id xset dpms 600
 
 # Window border style: normal: border normal, with window title bar;
