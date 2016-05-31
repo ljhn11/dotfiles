@@ -83,5 +83,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=vim
-
+rm -rf /tmp/tmux-1000/
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx 
