@@ -54,10 +54,12 @@ cpu_avg_samples 2
 
 ## Stuff after 'TEXT' will be formatted on screen
 TEXT
-${upspeed wlp5s0} | \
-${downspeed wlp5s0} | \
-${fs_used /}/${fs_size /} | \
-${cpu cpu1}% | \
-${mem}/${memmax} | \
-${battery_percent BAT1}% | \
-${time %Y-%m-%d} ${time %H:%M} 
+${font FontAwesome:size9} ${upspeed wlp5s0}  \
+${font FontAwesome:size9} ${downspeed wlp5s0}  \
+${font FontAwesome:size9}  ${fs_used /}  \
+${font FontAwesome:size9}  ${cpu cpu1}%  \
+${font FontAwesome:size9}  ${mem}  \
+${font FontAwesome:size9}  ${battery_percent BAT1}%  \
+${font FontAwesome:size9}  ${time %Y-%m-%d}  \
+${font FontAwesome:size9}  ${time %H:%M}  \
+${font FontAwesome:size9}  ljhn11  

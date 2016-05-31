@@ -1,5 +1,5 @@
 ! font set
-urxvt.font: xft:Inconsolata:bold:size=12
+urxvt.font: xft:Inconsolata:size=12
 urxvt*internalBorder: 0
 ! Input Method set
 Rxvt.inputMethod:fcitx
