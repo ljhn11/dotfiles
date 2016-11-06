@@ -28,10 +28,10 @@ font pango:DejaVu Sans Mono 8
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $mod Mod4
-set $up l
-set $down k
+set $up n
+set $down l
 set $left j
-set $right semicolon
+set $right k
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -135,13 +135,11 @@ bindsym $mod+Shift+0 move container to workspace 10
  assign [class="(?i)urxvt"] → 1
  assign [class="(?i)chromium"] → 2
  assign [class="(?i)WizNote"] → 3
- assign [class="(?i)pcmanfm"] → 4
- assign [class="(?i)vlc"] → 5
- assign [class="(?i)mplayer"] → 5
- assign [class="(?i)smplayer"] → 5
- assign [class="(?i)feh"] → 5
- assign [class="(?i)qq"] → 3
-
+ assign [class="(?i)pcmanfm"] →3 
+ assign [class="(?i)vlc"] → 4
+ assign [class="(?i)mplayer"] → 4
+ assign [class="(?i)smplayer"] → 4
+ assign [class="(?i)feh"] → 3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -212,9 +210,6 @@ exec --no-startup-id fcitx
 exec --no-startup-id urxvt
 #exec --no-startup-id urxvt -e bash -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session"
 exec --no-startup-id xset dpms 600
-
-for_window [instance="QQ.exe"] floating enable
-for_window [instance="QQ.exe"] border none
 
 # Window border style: normal: border normal, with window title bar;
 # none: no border or window title bar; 1pixel: 1 pixel border.
